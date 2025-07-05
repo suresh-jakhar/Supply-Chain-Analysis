@@ -8,32 +8,49 @@ A hands-on data analysis project to explore supply chain, We dive into product p
 
 
 
-### 📋 Data Handling & Analysis
-- Cleaned and explored the dataset using `pandas`
-- Checked for null values, understood distributions, and summarized key stats
+## 🛠 Techniques & Tools Used
 
-### 📊 Visualization
-- Used **Plotly Express** and **Plotly Graph Objects** to build interactive charts:
-  - Scatter plots (with trendlines)
-  - Bar and pie charts
-  - Histograms and box plots
-  - Treemaps and other breakdown visuals
-- Visuals include tooltips, filters, and color mapping for deeper insights
+This project dives into supply chain data to uncover trends, performance insights, and operational gaps. Below is a summary of the techniques and libraries used throughout the analysis.
 
-### 📉 Statistical Insight
-- Added OLS trendlines in scatter plots to observe relationships between variables (like price vs revenue)
+### 📋 Data Preparation
+- Imported and explored data using **pandas**
+- Handled missing values using `dropna` for critical analysis columns
+- Created pivot tables for aggregated views
 
-### 📦 Supply Chain Insights
-- Revenue and cost analysis by product type
-- Identified high-performing product categories and regional performance
-- Looked at sales vs stock to get an idea of inventory flow
+### 📊 Visualization (Interactive)
+Used **Plotly Express** and **Plotly Graph Objects** for all visualizations:
+- **Scatter Plot** of Price vs Revenue with custom manual trendline using `numpy.polyfit`
+- **Pie Charts** for:
+  - Sales by Product Type
+  - Cost distribution by Transportation Mode
+  - Defect rate distribution by Transportation Mode
+- **Bar Charts** for:
+  - Revenue by Shipping Carrier
+  - Order Quantity by SKU
+  - Defect Rates by Product Type
+- **Line Charts** for:
+  - Revenue by SKU
+  - Stock Levels by SKU
+
+### 🧮 Statistical & Manual Analysis
+- Used `numpy.polyfit` to create a **manual trendline** for price vs revenue analysis
+- Aggregated performance metrics like:
+  - Total Revenue per shipping carrier
+  - Average lead times and manufacturing costs by product type
+  - Average defect rates by product and transportation mode
+
+### 📦 Supply Chain Focus Areas
+- Product-level and SKU-level revenue insights
+- Order volume and stock level trends
+- Shipping cost comparisons
+- Manufacturing cost and lead time efficiency
+- Defect rate analysis by both product and transport method
 
 ### 📚 Libraries Used
-- `pandas` for data processing
-- `plotly.express` and `plotly.graph_objects` for plotting
-- `statsmodels` for regression overlays
-
-All visuals are fully interactive and designed to help explore patterns, trends, and insights across the supply chain dataset.
+- `pandas` – data manipulation
+- `numpy` – trendline fitting
+- `plotly.express` and `plotly.graph_objects` – visualizations
+- `plotly.io` – template styling
 
 
 
