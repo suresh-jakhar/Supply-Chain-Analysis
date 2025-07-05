@@ -7,20 +7,6 @@
 A hands-on data analysis project to explore supply chain, We dive into product pricing, revenue patterns, and product categories, and use interactive visualizations to extract actionable insights.
 
 
----
-
-## 📁 Project Structure
-
-```bash
-.
-├── Supply_Chain_Analysis-checkpoint.ipynb   # Main Jupyter Notebook
-├── supply_chain_data.csv                    # Dataset (add this to run the notebook)
-└── README.md                                # Project documentation
-
-
-## 🛠 Techniques & Tools Used
-
-This project applies a range of techniques to analyze and visualize supply chain data. Here's a quick breakdown of what was used:
 
 ### 📋 Data Handling & Analysis
 - Cleaned and explored the dataset using `pandas`
